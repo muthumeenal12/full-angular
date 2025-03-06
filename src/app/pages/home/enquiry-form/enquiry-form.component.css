@@ -1,0 +1,52 @@
+.enquiry-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enquiry-container h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .enquiry-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .enquiry-container label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .enquiry-container input,
+  .enquiry-container select,
+  .enquiry-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .enquiry-container textarea {
+    height: 100px;
+  }
+  
+  .enquiry-container button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .enquiry-container button:hover {
+    background: #0056b3;
+  }
+  

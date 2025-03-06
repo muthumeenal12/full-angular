@@ -1,6 +1,14 @@
-<h3>Our Services</h3>
-
-<app-service-card
-  *ngFor="let service of serviceslist"
-  [service]="service"
-></app-service-card>
+<div class="home-container">
+    <div class="services-section">
+      <h3>Our Services</h3>
+      <div class="services-grid">
+        <app-service-card *ngFor="let service of serviceslist" [service]="service"></app-service-card>
+      </div>
+    </div>
+  
+    <div class="enquiry-section">
+      <!-- <h3>Enquire Now</h3> -->
+      <app-enquiry-form></app-enquiry-form>
+    </div>
+  </div>
+  

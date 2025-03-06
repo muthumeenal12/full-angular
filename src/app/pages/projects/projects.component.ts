@@ -8,7 +8,10 @@ import { ApiService } from '../../services/api.service';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
- projectslist:project[] = []
+ projectslist:project[] = [];
+ selectedStatus:string = 'All';
+ minTeamSize:number = 0;
+ maxTeamSize:number = 100;
 
   constructor(private api:ApiService){
   

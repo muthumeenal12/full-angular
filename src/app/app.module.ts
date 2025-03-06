@@ -12,6 +12,14 @@ import { ContactItemComponent } from './pages/contacts/contact-item/contact-item
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceCardComponent } from './pages/home/service-card/service-card.component';
 import { ProjectCardComponent } from './pages/projects/project-card/project-card.component';
+import { EnquiryFormComponent } from './pages/home/enquiry-form/enquiry-form.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './common/login/login.component';
+import { EnquiriesComponent } from './pages/enquiries/enquiries.component';
+import { FilterservicePipe } from './pipes/filterservice.pipe';
+import { HighlightPipe } from './pipes/highlight.pipe';
+import { TeamSizeFilterPipe } from './pipes/team-size-filter.pipe';
+import { ProjectStatusFilterPipe } from './pipes/project-status-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -23,12 +31,20 @@ import { ProjectCardComponent } from './pages/projects/project-card/project-card
     MenuBarComponent,
     ContactItemComponent,
     ServiceCardComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    EnquiryFormComponent,
+    LoginComponent,
+    EnquiriesComponent,
+    FilterservicePipe,
+    HighlightPipe,
+    TeamSizeFilterPipe,
+    ProjectStatusFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [] ,
   bootstrap: [AppComponent]

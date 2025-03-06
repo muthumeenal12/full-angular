@@ -18,6 +18,17 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/projects">Projects</a>
                 </li>
+                <li class="nav-item" *ngIf="status">
+                    <a class="nav-link" routerLink="/enquiries">Enquiry</a>
+                </li>
+               
+            </ul>
+
+            <ul class="navbar-nav ms-auto" >
+                <li class="nav-item">
+                    <a class="nav-link"(click)="loginhandler()">{{loginmenu}}
+                </a>
+                </li>
             </ul>
         </div>
     </div>
